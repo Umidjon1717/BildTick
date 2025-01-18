@@ -134,7 +134,7 @@ const Detail = () => {
           className="relative w-full h-[700px] bg-cover bg-center max-[850px]:h-[500px] max-[600px]:h-[400px] "
           style={{
             backgroundImage: `url(${
-              import.meta.env.VITE_IMAGE_URL + data.backdrop_path
+              'https://image.tmdb.org/t/p/original' + data.backdrop_path
             })`,
           }}
         >
@@ -168,7 +168,7 @@ const Detail = () => {
                 {images.backdrops.slice(0, 10).map((image, index) => (
                   <img
                     key={index}
-                    src={import.meta.env.VITE_IMAGE_URL + image.file_path}
+                    src={'https://image.tmdb.org/t/p/original' + image.file_path}
                     alt="Movie Scene"
                     className="w-64 h-40 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform"
                   />

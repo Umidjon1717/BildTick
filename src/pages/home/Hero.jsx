@@ -15,7 +15,7 @@ const Hero = ({ movies }) => {
   const heroItems1 = movies?.map((movie) => (
     <SwiperSlide key={movie.id} className=" relative">
       <img
-        src={`${import.meta.env.VITE_IMAGE_URL}${movie.backdrop_path}`}
+        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
         alt={movie?.title}
       />
       <div className=" absolute left-0 bottom-[28px] text-white flex flex-col items-center justify-center gap-2 w-full">
@@ -35,7 +35,7 @@ const Hero = ({ movies }) => {
   const heroItems2 = movies?.map((movie) => (
     <SwiperSlide key={movie.id} className=" relative">
       <img
-        src={`${import.meta.env.VITE_IMAGE_URL}${movie.backdrop_path}`}
+        src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
         alt={movie?.title}
       />
     </SwiperSlide>

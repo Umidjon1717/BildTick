@@ -114,7 +114,7 @@ const MyMovies = () => {
                   className={`py-2 px-5 rounded-full font-medium transition-all duration-300 whitespace-nowrap shadow-md 
                   ${
                     selectedGenre.includes(genre.id)
-                      ? "bg-green-500 text-white border-none hover:bg-green-600"
+                      ? "bg-red-500 text-white border-none hover:bg-red-700"
                       : "bg-gray-700 text-gray-300 hover:bg-red-500 hover:text-white"
                   }`}
                 >
@@ -129,7 +129,7 @@ const MyMovies = () => {
           </div>
         </div>
   
-        {/* Movies Section */}
+
         <div className="mb-8">
           {data?.results?.length > 0 ? (
             <Movies data={data?.results} bg={" shadow-lg rounded-lg"} />
@@ -140,7 +140,6 @@ const MyMovies = () => {
           )}
         </div>
   
-        {/* Pagination Section */}
         <div className="flex justify-center py-6">
           <Pagination
             page={page}

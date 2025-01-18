@@ -46,7 +46,7 @@ const MovieItem = ({ title, poster_path, vote_average, id, bg, data }) => {
       </button>
       <img
         onClick={() => navigate(`/product/${id}`)}
-        src={`${import.meta.env.VITE_IMAGE_URL}${poster_path}`}
+        src={`https://image.tmdb.org/t/p/original${poster_path}`}
         alt={title}
         className="w-full h-[400px] object-cover rounded-md mb-4"
       />
